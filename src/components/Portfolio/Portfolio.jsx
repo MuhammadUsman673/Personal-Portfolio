@@ -22,7 +22,7 @@ function Portfolio() {
                         <div className="layer">
                             <h3>Weather App</h3>
                             <p>Weather App using API.</p>
-                            <a href="https://weather-app-psi.vercel.app" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://weatther-app-psi.vercel.app" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
                     <div className="work">
