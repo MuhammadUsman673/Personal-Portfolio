@@ -189,6 +189,8 @@
     }
     .about-colm-2 {
         padding: 0 12px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
     .about-colm-1 img {
         width: calc(100% - 24px);
