@@ -120,6 +120,7 @@ nav ul li a:hover {
     width: 100%;
     border-radius: 15px;
     transition: transform 0.5s ease;
+    box-sizing: border-box;
 }
 
 .about-colm-1 img:hover {
@@ -508,7 +509,7 @@ form .btn1 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 10px 8%;
+        padding: 10px 10%;
     }
     nav {
         position: absolute;
@@ -518,7 +519,7 @@ form .btn1 {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 10px 8%;
+        padding: 10px 10%;
         height: auto;
     }
     .logo {
@@ -553,25 +554,24 @@ form .btn1 {
     .about-colm-1,
     .about-colm-2 {
         flex-basis: 100%;
+        box-sizing: border-box;
     }
     .about-colm-1 {
         margin-bottom: 30px;
+        padding: 0 15px;
     }
     .about-colm-2 {
-        font-size: 14px;
+        padding: 0 15px;
     }
     #about .row {
-        margin-left: 15px;
-        margin-right: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
+        box-sizing: border-box;
     }
     .about-colm-1 img {
-        width: calc(100% - 20px);
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    .about-colm-2 {
-        margin-left: 10px;
-        margin-right: 10px;
+        width: calc(100% - 30px);
+        margin-left: 15px;
+        margin-right: 15px;
     }
     .contact-left,
     .contact-right {
@@ -601,10 +601,10 @@ form .btn1 {
 
 @media only screen and (max-width: 600px) {
     .container {
-        padding: 10px 7%;
+        padding: 10px 8%;
     }
     nav {
-        padding: 10px 7%;
+        padding: 10px 8%;
     }
     .header-text {
         margin-top: 120px;
@@ -617,17 +617,19 @@ form .btn1 {
         font-size: 40px;
     }
     #about .row {
-        margin-left: 12px;
-        margin-right: 12px;
+        margin-left: 15px;
+        margin-right: 15px;
     }
-    .about-colm-1 img {
-        width: calc(100% - 16px);
-        margin-left: 8px;
-        margin-right: 8px;
+    .about-colm-1 {
+        padding: 0 12px;
     }
     .about-colm-2 {
-        margin-left: 8px;
-        margin-right: 8px;
+        padding: 0 12px;
+    }
+    .about-colm-1 img {
+        width: calc(100% - 24px);
+        margin-left: 12px;
+        margin-right: 12px;
     }
     .layer {
         padding: 10px;
@@ -646,10 +648,10 @@ form .btn1 {
 
 @media only screen and (max-width: 480px) {
     .container {
-        padding: 10px 6%;
+        padding: 10px 7%;
     }
     nav {
-        padding: 10px 6%;
+        padding: 10px 7%;
     }
     .header-text {
         margin-top: 90px;
@@ -662,17 +664,19 @@ form .btn1 {
         font-size: 32px;
     }
     #about .row {
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 12px;
+        margin-right: 12px;
     }
-    .about-colm-1 img {
-        width: calc(100% - 12px);
-        margin-left: 6px;
-        margin-right: 6px;
+    .about-colm-1 {
+        padding: 0 10px;
     }
     .about-colm-2 {
-        margin-left: 6px;
-        margin-right: 6px;
+        padding: 0 10px;
+    }
+    .about-colm-1 img {
+        width: calc(100% - 20px);
+        margin-left: 10px;
+        margin-right: 10px;
     }
     .services-list {
         grid-template-columns: 1fr;
@@ -705,10 +709,10 @@ form .btn1 {
 
 @media only screen and (max-width: 320px) {
     .container {
-        padding: 10px 5%;
+        padding: 10px 6%;
     }
     nav {
-        padding: 10px 5%;
+        padding: 10px 6%;
     }
     .header-text {
         margin-top: 60px;
@@ -721,17 +725,19 @@ form .btn1 {
         font-size: 28px;
     }
     #about .row {
-        margin-left: 8px;
-        margin-right: 8px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
-    .about-colm-1 img {
-        width: calc(100% - 10px);
-        margin-left: 5px;
-        margin-right: 5px;
+    .about-colm-1 {
+        padding: 0 8px;
     }
     .about-colm-2 {
-        margin-left: 5px;
-        margin-right: 5px;
+        padding: 0 8px;
+    }
+    .about-colm-1 img {
+        width: calc(100% - 16px);
+        margin-left: 8px;
+        margin-right: 8px;
     }
     #form-message {
         font-size: 10px;
@@ -740,114 +746,5 @@ form .btn1 {
     .social-icons a {
         font-size: 25px;
         margin-right: 10px;
-    }
-}
-
-
-
-
-
-
-
-/* About section CSS */
-
-#about {
-    padding: 80px 0;
-    color: #ababab;
-}
-
-.row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.about-colm-1 {
-    flex-basis: 35%;
-}
-
-.about-colm-1 img {
-    width: 100%;
-    border-radius: 15px;
-}
-
-.about-colm-2 {
-    flex-basis: 60%;
-}
-
-.sub-title {
-    font-size: 60px;
-    font-weight: 600;
-    color: white;
-}
-
-.tab-titles {
-    display: flex;
-    margin: 20px 0 40px;
-}
-
-.tab-links {
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-}
-
-.tab-links::after {
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #ff004f;
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    transition: 0.5s;
-}
-
-.tab-links.active-link::after {
-    width: 100%;
-}
-
-.tab-contents ul li {
-    list-style: none;
-    margin: 10px 0;
-}
-
-.tab-contents ul li span {
-    color: #b54769;
-    font-size: 14px;
-}
-
-.tab-contents {
-    display: none;
-}
-
-.tab-contents.active-tab {
-    display: block;
-}
-
-/* Responsive CSS */
-
-@media only screen and (max-width: 768px) {
-    #about {
-        padding: 50px 20px; /* Add padding for small screens */
-    }
-
-    #about .row {
-        margin: 0; /* Remove extra margin */
-    }
-
-    .about-colm-1,
-    .about-colm-2 {
-        flex-basis: 100%;
-    }
-
-    .about-colm-1 {
-        margin-bottom: 30px;
-    }
-
-    .about-colm-2 {
-        font-size: 14px;
     }
 }
