@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import React from 'react';
 import usman from "../../assets/muhammad.jpg"; // your logo
+import './about.css'
 
 function About() {
     const [activeTab, setActiveTab] = useState('skills');
