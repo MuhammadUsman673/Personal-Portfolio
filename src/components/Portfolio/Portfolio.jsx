@@ -1,7 +1,7 @@
 
 import React from 'react';
 import fyp from "../../assets/fyp.PNG"; 
-import weather from "../../assets/Weaterapp.PNG"; // your logo
+import weather from "../../assets/weaterapp.PNG"; // your logo
 import gray from "../../assets/gray.PNG"; // your logo
 function Portfolio() {
     return (
