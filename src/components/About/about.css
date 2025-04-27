@@ -204,6 +204,12 @@
         margin-left: 20px !important;
         margin-right: 20px !important;
     }
+    .about-colm-2 {
+        width: calc(100% - 40px) !important;
+        max-width: 250px;
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+    }
 }
 
 @media only screen and (max-width: 320px) {
@@ -219,6 +225,12 @@
     }
     .about-colm-2 {
         padding: 0 20px !important;
+    }
+    .about-colm-1  {
+        width: calc(100% - 40px) !important;
+        max-width: 250px;
+        margin-left: 20px !important;
+        margin-right: 20px !important;
     }
     .about-colm-1 img {
         width: calc(100% - 30px) !important;
