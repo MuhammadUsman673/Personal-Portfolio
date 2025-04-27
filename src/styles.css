@@ -99,6 +99,102 @@ nav ul li a:hover {
     color: #ff004f;
 }
 
+#about {
+    padding: 80px 0;
+    color: #ababab;
+    animation: fadeIn 1s ease-in;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-colm-1 {
+    flex-basis: 35%;
+    animation: slideInLeft 1s ease-out;
+}
+
+.about-colm-1 img {
+    width: 100%;
+    border-radius: 15px;
+    transition: transform 0.5s ease;
+}
+
+.about-colm-1 img:hover {
+    transform: scale(1.05);
+}
+
+.about-colm-2 {
+    flex-basis: 60%;
+    animation: slideInRight 1s ease-out;
+}
+
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+    animation: fadeIn 1s ease-out;
+}
+
+.tab-titles {
+    display: flex;
+    margin-top: 20px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: width 0.4s ease;
+}
+
+.tab-links.active-link::after,
+.tab-links:hover::after {
+    width: 100%;
+}
+
+.tab-links:hover {
+    color: #ff004f;
+}
+
+.tab-links.active-link {
+    color: #ff004f;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: #b54769;
+    font-size: 14px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+    animation: fadeInTab 0.5s ease-in;
+}
+
 #services {
     padding: 30px 0;
     animation: fadeIn 1s ease-in;
@@ -165,7 +261,7 @@ nav ul li a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    aspect-ratio: 4/3;
+    aspect-ratio: 7/4;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s ease;
@@ -372,6 +468,11 @@ form .btn1 {
     to { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes fadeInTab {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 @media only screen and (max-width: 1024px) {
     .header-text {
         margin-top: 20%;
@@ -379,6 +480,13 @@ form .btn1 {
     }
     .header-text h1 {
         font-size: 50px;
+    }
+    .sub-title {
+        font-size: 50px;
+    }
+    .about-colm-1,
+    .about-colm-2 {
+        flex-basis: 48%;
     }
     .services-list div {
         padding: 30px;
@@ -400,7 +508,7 @@ form .btn1 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 10px 10%;
+        padding: 10px 8%;
     }
     nav {
         position: absolute;
@@ -410,7 +518,7 @@ form .btn1 {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 10px 10%;
+        padding: 10px 8%;
         height: auto;
     }
     .logo {
@@ -438,6 +546,19 @@ form .btn1 {
     }
     .header-text h1 {
         font-size: 40px;
+    }
+    .sub-title {
+        font-size: 45px;
+    }
+    .about-colm-1,
+    .about-colm-2 {
+        flex-basis: 100%;
+    }
+    .about-colm-1 {
+        margin-bottom: 30px;
+    }
+    .about-colm-2 {
+        font-size: 14px;
     }
     .contact-left,
     .contact-right {
@@ -467,10 +588,10 @@ form .btn1 {
 
 @media only screen and (max-width: 600px) {
     .container {
-        padding: 10px 8%;
+        padding: 10px 7%;
     }
     nav {
-        padding: 10px 8%;
+        padding: 10px 7%;
     }
     .header-text {
         margin-top: 120px;
@@ -478,6 +599,9 @@ form .btn1 {
     }
     .header-text h1 {
         font-size: 30px;
+    }
+    .sub-title {
+        font-size: 40px;
     }
     .layer {
         padding: 10px;
@@ -496,10 +620,10 @@ form .btn1 {
 
 @media only screen and (max-width: 480px) {
     .container {
-        padding: 10px 7%;
+        padding: 10px 6%;
     }
     nav {
-        padding: 10px 7%;
+        padding: 10px 6%;
     }
     .header-text {
         margin-top: 90px;
@@ -507,6 +631,9 @@ form .btn1 {
     }
     .header-text h1 {
         font-size: 24px;
+    }
+    .sub-title {
+        font-size: 32px;
     }
     .services-list {
         grid-template-columns: 1fr;
@@ -539,10 +666,10 @@ form .btn1 {
 
 @media only screen and (max-width: 320px) {
     .container {
-        padding: 10px 6%;
+        padding: 10px 5%;
     }
     nav {
-        padding: 10px 6%;
+        padding: 10px 5%;
     }
     .header-text {
         margin-top: 60px;
@@ -550,6 +677,9 @@ form .btn1 {
     }
     .header-text h1 {
         font-size: 20px;
+    }
+    .sub-title {
+        font-size: 28px;
     }
     #form-message {
         font-size: 10px;
