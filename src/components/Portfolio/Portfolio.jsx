@@ -30,7 +30,7 @@ function Portfolio() {
                         <div className="layer">
                             <h3>Gray Pak</h3>
                             <p>E-commerce Website.</p>
-                            <a href="https://foody-zone-rho-sepia.vercel.app" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://graypak.netlify.app" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
                 </div>
